@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Galeria de imagenes | Nico Hermida</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    
+    <script src="https://kit.fontawesome.com/f241e46f9b.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Galería de imagenes</h1>
+                <p>(permite filtrados)</p>
+            </div>
+
+            <form>
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Personas</a>
+                <a href="#">Animales</a>
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item" 
+                data-categoria="ciudades" 
+                data-etiquetas="ciudades autos carros calles"
+                data-descripcion="1.- Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+                >
+                <div class="item-contenido">
+                    <img src="images/ciudad1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                data-categoria="personas" 
+                data-etiquetas="personas mujeres"
+                data-descripcion="2.- Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+                >
+                <div class="item-contenido">
+                    <img src="images/persona1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                data-categoria="paisajes" 
+                data-etiquetas="paisajes montañas mar playas"
+                data-descripcion="3.- Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+                >
+                <div class="item-contenido">
+                    <img src="images/paisaje1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                data-categoria="animales" 
+                data-etiquetas="animales leones"
+                data-descripcion="4.- Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+                >
+                <div class="item-contenido">
+                    <img src="images/animal1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                data-categoria="animales" 
+                data-etiquetas="animales pandas"
+                data-descripcion="5.- Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+                >
+                <div class="item-contenido">
+                    <img src="images/animal2.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                data-categoria="personas" 
+                data-etiquetas="personas mujeres"
+                data-descripcion="6.- Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+                >
+                <div class="item-contenido">
+                    <img src="images/persona2.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                data-categoria="paisajes" 
+                data-etiquetas="paisajes montañas niebla"
+                data-descripcion="7.- Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+                >
+                <div class="item-contenido">
+                    <img src="images/paisaje2.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                data-categoria="ciudades" 
+                data-etiquetas="ciudades paisajes carreteras"
+                data-descripcion="8.- Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+                >
+                <div class="item-contenido">
+                    <img src="images/ciudad2.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+                data-categoria="naturaleza" 
+                data-etiquetas="naturaleza hojas plantas"
+                data-descripcion="9.- Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+                >
+                <div class="item-contenido">
+                    <img src="images/naturaleza1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"></p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="https://twitter.com/nico_hermida" target="_blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://www.instagram.com/nicoo_hermida" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://github.com/nicohermida01" target="_blank" class="github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="creado-por">
+                <p>Sitio diseñado por <a href="#">Nico hermida</a> - <a href="#">Sitio Web</a></p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
